@@ -1,0 +1,37 @@
+/* Define colors */
+:root {
+    --color-main: #de2424;
+    --color-bright: #f15757; /* Adjusted lightened color */
+    --color-shadow: #a80000; /* Adjusted darkened color */
+}
+
+/* Styles */
+body {
+    background: #f5f1e8;
+}
+
+.obj {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #f15757; /* Changed to the adjusted brightened color */
+    border-radius: 100px;
+    box-shadow: inset -2px 2px 2px 0px rgba(241, 87, 87, 1), inset 2px -2px 2px 0px rgba(168, 0, 0, 0.3), inset 0px 0px 40px 15px rgba(222, 36, 36, 1), 1px 1px 0 0 #b41f1f, 2px 2px 0 0 #a20000, 3px 3px 0 0 #950000, 4px 4px 0 0 #880000, 5px 5px 0 0 #7a0000, 6px 6px 0 0 #6b0000, 7px 7px 0 0 #5b0000, 8px 8px 0 0 #4a0000, 9px 9px 0 0 #380000, 10px 10px 0 0 #250000, 11px 11px 0 0 #110000, 12px 12px 0 0 #000000, 13px 13px 0 0 #000000, 14px 14px 0 0 #000000, 15px 15px 0 0 #000000, 16px 16px 0 0 #000000, 17px 17px 0 0 #000000, 18px 18px 0 0 #000000, 19px 19px 0 0 #000000, 20px 20px 0 0 #000000, 19px 21px 1pc 1px rgba(168, 0, 0, 0.1), 18px 22px 1px 1px rgba(168, 0, 0, 0.1), 17px 23px 1px 1px rgba(168, 0, 0, 0.1), 16px 24px 1px 1px rgba(168, 0, 0, 0.1), 15px 25px 1px 1px rgba(168, 0, 0, 0.1), 14px 26px 2px 1px rgba(168, 0, 0, 0.1), 13px 27px 3px 1px rgba(168, 0, 0, 0.1), 12px 28px 4px 1px rgba(168, 0, 0, 0.1), 11px 29px 5px 1px rgba(168, 0, 0, 0.1), 10px 30px 6px 1px rgba(168, 0, 0, 0.1), 9px 31px 7px 1px rgba(168, 0, 0, 0.1), 20px 20px 4px 1px rgba(168, 0, 0, 1);
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+.obj:active {
+    transition: all 0.15s ease-out;
+    margin-left: 31px;
+    margin-top: 31px;
+    background: #ff7070; /* Adjusted to a brighter color */
+    box-shadow: inset -2px 2px 2px 0px rgba(241, 87, 87, 1), inset 2px -2px 2px 0px rgba(168, 0, 0, 0.3), inset 0px 0px 40px 15px rgba(222, 36, 36, 1), 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 0 0 #a80000, 1px 1px 2px 1px rgba(168, 0, 0, 0.5), 0px 0px 4px 1px rgba(168, 0, 0, 1);
+}
+
+.obj:active + h1 {
+    opacity: 1;
+    transition: all 0.15s ease-out;
+    transition-delay: 0.25s;
+    transform: translate3d(-50%, -50%, 0);
+}
